@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 module BootstrapHelper
   module Breadcrumb
     def self.included(receiver)
