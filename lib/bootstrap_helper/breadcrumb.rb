@@ -16,7 +16,7 @@ module BootstrapHelper
       protected
 
       def set_breadcrumbs
-        @breadcrumbs = ["<a href='/'>ホーム</a>".html_safe]
+        @breadcrumbs = ["<a href='/'>トップ</a>".html_safe]
       end
 
       def drop_breadcrumb(title=nil, url=nil)
@@ -52,7 +52,7 @@ module BootstrapHelper
           if i == (@breadcrumbs.length - 1)
             breadcrumb_content = c
           else
-            breadcrumb_content = c + content_tag(:span, "/", :class => "divider")
+            breadcrumb_content = c + content_tag(:span, ">", :class => "divider")
           end
 
           crumb += content_tag(:li, breadcrumb_content ,:class => breadcrumb_class )
